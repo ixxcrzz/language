@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">LA<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#voices">Our Voices</a>
+                <a href="#summary">Summary</a>
+                <a href="#learned">What We Learned</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+
+            <div class="speech-bubble bubble-one">Hello!</div>
+            <div class="speech-bubble bubble-two">Wah yuh seh?</div>
+            <div class="speech-bubble bubble-three">Good afternoon.</div>
+            <div class="speech-bubble bubble-four">¿Hola?</div>
+
+            <div class="hero-content reveal">
+                <p class="eyebrow">UNIVERSITY GROUP PRESENTATION</p>
+
+                <h1>
+                    Language
+                    <span>Awareness</span>
+                </h1>
+
+                <p class="hero-text">
+                    Exploring how we communicate, connect, and adapt
+                    in different settings.
+                </p>
+
+                <a href="#voices" class="hero-button">
+                    Explore Our Voices <span>↓</span>
+                </a>
+            </div>
+
+            <div class="language-animation">
+                <span>ENGLISH</span>
+                <span>→</span>
+                <span>CREOLE</span>
+                <span>→</span>
+                <span>SPANISH</span>
+            </div>
+        </section>
+
+
+        <!-- INTRO -->
+        <section class="intro section-padding reveal">
+
+            <p class="section-label">01 — INTRODUCTION</p>
+
+            <h2>
+                Same people.
+                <span>Different ways of speaking.</span>
+            </h2>
+
+            <p>
+                Our language changes depending on where we are, who we are
+                speaking to, and how comfortable we feel. Explore our group's
+                experiences with Standard English, Guyanese Creole, and Spanish.
+            </p>
+
+        </section>
+
+
+        <!-- OUR VOICES -->
+        <section id="voices" class="voices section-padding">
+
+            <div class="section-heading reveal">
+                <p class="section-label">02 — OUR VOICES</p>
+                <h2>Meet the group.</h2>
+                <p>Click a member to explore their individual responses.</p>
+            </div>
+
+            <div class="members-grid">
+
+                <article class="member-card reveal" data-member="malika">
+                    <div class="member-number">01</div>
+                    <div>
+                        <h3>Malika McKenzie</h3>
+                        <p>USI: 1062531</p>
+                    </div>
+                    <span class="arrow">↗</span>
+                </article>
+
+                <article class="member-card reveal" data-member="shivrani">
+                    <div class="member-number">02</div>
+                    <div>
+                        <h3>Shivrani Baldeo</h3>
+                        <p>USI: 1064915</p>
+                    </div>
+                    <span class="arrow">↗</span>
+                </article>
+
+                <article class="member-card reveal" data-member="joyel">
+                    <div class="member-number">03</div>
+                    <div>
+                        <h3>Joyel Forrester</h3>
+                        <p>USI: 1057140</p>
+                    </div>
+                    <span class="arrow">↗</span>
+                </article>
+
+                <article class="member-card reveal" data-member="maria">
+                    <div class="member-number">04</div>
+                    <div>
+                        <h3>Maria Chester</h3>
+                        <p>USI: 1065347</p>
+                    </div>
+                    <span class="arrow">↗</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- MODAL -->
+        <div class="modal" id="memberModal">
+
+            <div class="modal-content">
+
+                <button class="close-modal">&times;</button>
+
+                <p class="section-label" id="modalNumber">01 — MEMBER</p>
+
+                <h2 id="modalName">Member Name</h2>
+                <p id="modalUSI" class="modal-usi"></p>
+
+                <div id="answers"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WHERE LANGUAGE TAKES US -->
+        <section class="settings section-padding">
+
+            <div class="section-heading reveal">
+                <p class="section-label">03 — LANGUAGE IN DIFFERENT SETTINGS</p>
+                <h2>Where does language take us?</h2>
+                <p>Different environments can influence the way we communicate.</p>
+            </div>
+
+            <div class="settings-grid">
+
+                <div class="setting-card reveal">
+                    <span>01</span>
+                    <h3>Home</h3>
+                    <p>Comfortable, relaxed conversations with family.</p>
+                    <strong>English / Creolese</strong>
+                </div>
+
+                <div class="setting-card reveal">
+                    <span>02</span>
+                    <h3>University</h3>
+                    <p>More formal communication with lecturers and classmates.</p>
+                    <strong>Standard English</strong>
+                </div>
+
+                <div class="setting-card reveal">
+                    <span>03</span>
+                    <h3>Work</h3>
+                    <p>Professional language is generally expected.</p>
+                    <strong>Standard English</strong>
+                </div>
+
+                <div class="setting-card reveal">
+                    <span>04</span>
+                    <h3>Place of Worship</h3>
+                    <p>Formal language is commonly used during services.</p>
+                    <strong>Standard English</strong>
+                </div>
+
+                <div class="setting-card reveal">
+                    <span>05</span>
+                    <h3>Community</h3>
+                    <p>Everyday conversations can be more relaxed and casual.</p>
+                    <strong>Creolese / English</strong>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SAME PERSON DIFFERENT SETTING -->
+        <section class="comparison section-padding reveal">
+
+            <p class="section-label">04 — SAME PERSON. DIFFERENT SETTING.</p>
+
+            <h2>One message.<br><span>Two different tones.</span></h2>
+
+            <div class="toggle-container">
+
+                <button class="toggle active" data-mode="casual">
+                    Casual
+                </button>
+
+                <button class="toggle" data-mode="formal">
+                    Formal
+                </button>
+
+            </div>
+
+            <div class="comparison-box">
+
+                <p class="comparison-label" id="comparisonLabel">
+                    FRIENDS / CASUAL
+                </p>
+
+                <p class="comparison-text" id="comparisonText">
+                    “Wah yuh seh? We goin' out?”
+                </p>
+
+                <div class="tags" id="comparisonTags">
+                    <span>Relaxed</span>
+                    <span>Casual</span>
+                    <span>Creolese</span>
+                </div>
+
+            </div>
+
+            <p class="comparison-caption">
+                The setting can influence how we choose our words.
+            </p>
+
+        </section>
+
+
+        <!-- ONLINE CLASS -->
+        <section class="online-class section-padding">
+
+            <div class="section-heading reveal">
+                <p class="section-label">05 — FORMAL VS CASUAL</p>
+                <h2>Would you send this to your professor?</h2>
+            </div>
+
+            <div class="message-comparison">
+
+                <div class="message bad reveal">
+                    <div class="message-icon">×</div>
+                    <p class="message-label">CASUAL</p>
+
+                    <blockquote>
+                        “yo prof, check dis assignment lol”
+                    </blockquote>
+
+                    <span>Too informal for an academic setting</span>
+                </div>
+
+                <div class="message good reveal">
+                    <div class="message-icon">✓</div>
+                    <p class="message-label">FORMAL</p>
+
+                    <blockquote>
+                        “Good afternoon Professor, please find my assignment
+                        attached. Thank you.”
+                    </blockquote>
+
+                    <span>More appropriate for an academic setting</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUMMARY -->
+        <section id="summary" class="summary section-padding reveal">
+
+            <p class="section-label">06 — GROUP SUMMARY</p>
+
+            <div class="summary-content">
+
+                <h2>Our group perspective.</h2>
+
+                <p>
+                    Our group mainly uses Standard English and Guyanese Creole,
+                    with some use of Spanish depending on the setting and who
+                    we are speaking with. Standard English is mostly used at
+                    university, work, church, and in formal writing, while
+                    Creole is more common with family, friends, and in the
+                    community because it feels more relaxed and natural.
+                    Spanish may sometimes cause confusion or humorous reactions
+                    from people who do not understand it.
+                </p>
+
+                <p>
+                    Some challenges we may face include switching between
+                    Creole and formal English, pronunciation, grammar, and
+                    using unfamiliar words or terms. We may also have to be
+                    careful not to mix casual language with formal academic
+                    writing. Overall, we hope this course helps us understand
+                    how and why people change the way they speak in different
+                    situations, while also helping us improve our communication
+                    skills.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT WE LEARNED -->
+        <section id="learned" class="learned section-padding">
+
+            <div class="section-heading reveal">
+                <p class="section-label">07 — WHAT WE LEARNED</p>
+                <h2>Language is more than words.</h2>
+            </div>
+
+            <div class="learn-grid">
+
+                <div class="learn-card reveal">
+                    <span>01</span>
+                    <h3>Language Changes</h3>
+                    <p>
+                        The way we speak can change depending on our environment
+                        and the people around us.
+                    </p>
+                </div>
+
+                <div class="learn-card reveal">
+                    <span>02</span>
+                    <h3>Formal vs Casual</h3>
+                    <p>
+                        Different situations require different levels of
+                        formality.
+                    </p>
+                </div>
+
+                <div class="learn-card reveal">
+                    <span>03</span>
+                    <h3>Communication</h3>
+                    <p>
+                        Choosing the right words can help us communicate our
+                        ideas more clearly.
+                    </p>
+                </div>
+
+                <div class="learn-card reveal">
+                    <span>04</span>
+                    <h3>Awareness</h3>
+                    <p>
+                        Understanding language differences helps us appreciate
+                        how other people communicate.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FLOW -->
+        <section class="flow section-padding reveal">
+
+            <p class="section-label">08 — THE BIG IDEA</p>
+
+            <div class="flow-container">
+
+                <div class="flow-item">
+                    <span>01</span>
+                    <p>WHO WE ARE<br>TALKING TO</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-item">
+                    <span>02</span>
+                    <p>WHERE<br>WE ARE</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-item">
+                    <span>03</span>
+                    <p>HOW FORMAL<br>THE SITUATION IS</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-item highlight">
+                    <span>04</span>
+                    <p>HOW WE<br>CHOOSE TO SPEAK</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LANGUAGES -->
+        <section class="languages section-padding reveal">
+
+            <p class="section-label">09 — OUR LANGUAGES</p>
+
+            <div class="language-buttons">
+
+                <button>Standard English</button>
+                <button>Guyanese Creole</button>
+                <button>Spanish</button>
+
+            </div>
+
+            <div class="big-language">
+                <span>Different voices.</span>
+                <span>Different settings.</span>
+                <span>One conversation.</span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-top">
+
+            <div>
+                <p class="footer-logo">LA<span>.</span></p>
+                <p>Language Awareness</p>
+            </div>
+
+            <div class="footer-members">
+                <p>GROUP MEMBERS</p>
+                <span>Malika McKenzie — 1062531</span>
+                <span>Shivrani Baldeo — 1064915</span>
+                <span>Joyel Forrester — 1057140</span>
+                <span>Maria Chester — 1065347</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>University Group Presentation</p>
+            <p>Different voices. Different settings. One conversation.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
